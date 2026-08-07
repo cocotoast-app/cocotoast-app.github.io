@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coco Toast</title>
+    <script>
+      // GitHub Pages SPA 兜底：
+      // 当请求路径（如 /buy_pro）没有对应的静态文件时，GitHub Pages 返回此 404.html。
+      // 这里把原始路径写入 sessionStorage，再跳转到根路径加载 index.html，
+      // 由 index.html 中的脚本恢复路径并交给前端路由处理。
+      // 这样刷新任意前端路由都不会 404；若路由确实不存在，由前端 404 页面处理。
+      (function () {
+        var l = window.location;
+        try {
+          sessionStorage.setItem(
+            'cocotoast:spa-redirect',
+            l.pathname + l.search + l.hash
+          );
+        } catch (e) {
+          /* sessionStorage 不可用时直接回首页 */
+        }
+        l.replace(l.protocol + '//' + l.host + '/');
+      })();
+    </script>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        background: #0F0F0F;
+        color: #E0E0E0;
+        font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+      .spa-fallback {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 0.95rem;
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="spa-fallback">Redirecting…</div>
+  </body>
+</html>

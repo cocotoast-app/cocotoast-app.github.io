@@ -7,7 +7,24 @@
     <meta name="description" content="Coco Toast — 剪贴板即工具，极客效率之选。自动识别时间戳、Base64、JSON、URL，解码后弹窗展示并一键复制。" />
     <meta name="theme-color" content="#0F0F0F" />
     <title>Coco Toast — 剪贴板即工具，极客效率之选</title>
-    <script type="module" crossorigin src="/assets/index-DFs5ZVnB.js"></script>
+    <script>
+      // GitHub Pages SPA 路由恢复：
+      // 404.html 把原始路径写入 sessionStorage 后跳转到根路径加载本文件。
+      // 这里取出原始路径并用 history.replaceState 恢复，前端路由即可匹配到正确页面。
+      // 必须在 main.tsx 之前同步执行，以保证 BrowserRouter 读到正确的 URL。
+      (function () {
+        try {
+          var saved = sessionStorage.getItem('cocotoast:spa-redirect');
+          if (saved && saved.charAt(0) === '/') {
+            sessionStorage.removeItem('cocotoast:spa-redirect');
+            window.history.replaceState(null, '', saved);
+          }
+        } catch (e) {
+          /* ignore */
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-g-RrdIn3.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-DsH9ntO0.css">
   </head>
   <body>
