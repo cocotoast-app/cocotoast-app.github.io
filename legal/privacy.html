@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Privacy Policy · Coco Toast 隐私政策</title>
+    <meta
+      name="description"
+      content="Coco Toast Privacy Policy — what is processed locally on your device, what our licensing servers receive, payments, retention and your rights. Coco Toast 隐私政策。"
+    />
+    <meta name="theme-color" content="#0F0F0F" />
+    <link rel="canonical" href="https://app.coconot.cc/legal/privacy.html" />
+    <link rel="stylesheet" href="/legal/legal.css" />
+  </head>
+  <body>
+    <header class="legal-header">
+      <div class="legal-header__inner">
+        <a class="legal-brand" href="/">
+          <svg class="legal-brand__logo" width="18" height="18" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect x="2" y="2" width="28" height="28" rx="6" stroke="currentColor" stroke-width="2" fill="none" />
+            <rect x="8" y="10" width="16" height="3" rx="1.5" fill="currentColor" />
+            <rect x="8" y="16" width="12" height="3" rx="1.5" fill="currentColor" />
+            <rect x="8" y="22" width="8" height="3" rx="1.5" fill="currentColor" />
+          </svg>
+          <span class="legal-brand__name">Coco Toast</span>
+        </a>
+        <nav class="legal-header__nav">
+          <a href="/"><span data-lang-block="en">Home</span><span data-lang-block="zh">返回首页</span></a>
+          <a href="/legal/terms.html"><span data-lang-block="en">Terms</span><span data-lang-block="zh">服务条款</span></a>
+          <a href="/legal/privacy.html" aria-current="page"><span data-lang-block="en">Privacy</span><span data-lang-block="zh">隐私政策</span></a>
+          <a href="/legal/refund.html"><span data-lang-block="en">Refunds</span><span data-lang-block="zh">退款政策</span></a>
+          <button type="button" class="legal-lang-btn" data-lang-toggle aria-label="切换为中文">中文</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal-main">
+      <!-- ==================== English ==================== -->
+      <article data-lang-block="en" lang="en">
+        <h1 class="legal-title">Privacy Policy</h1>
+        <p class="legal-meta">
+          <span>Effective date: September 22, 2026</span>
+          <span>Last updated: September 22, 2026</span>
+        </p>
+
+        <p class="legal-lead">
+          Coco Toast is built around a simple principle: <strong>your clipboard, your mailbox and
+          your one-time passwords stay on your own device</strong>. Our servers only handle what
+          is needed to sell and validate a Pro licence. This policy explains exactly what that
+          means.
+        </p>
+
+        <section class="legal-section">
+          <h2><span class="num">1.</span>Who we are</h2>
+          <p>
+            Coco Toast ("we", "us") develops and distributes the Coco Toast desktop application
+            and operates its website and licence servers. For any privacy question or request you
+            can reach us at <a href="mailto:dubiao@gmail.com">dubiao@gmail.com</a>.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">2.</span>Data that stays on your device</h2>
+          <p>
+            The following data is created and stored <strong>locally only</strong>. It is never
+            transmitted to us:
+          </p>
+          <ul>
+            <li>
+              <strong>Clipboard content.</strong> Text you copy is analysed by the desktop
+              application on your own machine. Clipboard content is not uploaded, not logged by us
+              and not used to build any profile.
+            </li>
+            <li>
+              <strong>E-mail account credentials.</strong> If you connect a mailbox, your IMAP
+              password is encrypted on your device and protected by your operating system's
+              keychain. Mail is fetched directly from your e-mail provider to your device; we are
+              not an intermediary and we never receive your password or your mail.
+            </li>
+            <li>
+              <strong>OTP / TOTP secrets.</strong> One-time-password seeds are encrypted and stored
+              locally in the same way. They are never uploaded.
+            </li>
+            <li>
+              <strong>Application settings</strong> (preferences, window state, language) stored in
+              a local configuration file, plus your local Pro status file.
+            </li>
+          </ul>
+          <p class="legal-note">
+            <strong>In short:</strong> we have no ability to read your clipboard, your e-mail or
+            your 2FA codes. If you uninstall the application and remove its data, that information
+            is gone.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">3.</span>Data we collect when you buy or activate a licence</h2>
+          <p>
+            To sell a licence and keep it working across your devices, our servers store the
+            following:
+          </p>
+          <table class="legal-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>What it contains</th>
+                <th>Why</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Order record</td>
+                <td>
+                  Order ID, e-mail address, amount, currency, payment channel (Alipay or Paddle),
+                  payment status, order and payment timestamps.
+                </td>
+                <td>To identify your payment and issue your licence.</td>
+              </tr>
+              <tr>
+                <td>Licence record</td>
+                <td>
+                  Licence code, e-mail address, activation limit, number of activations used,
+                  status, and whether the licence e-mail has been sent.
+                </td>
+                <td>To deliver your licence code and support the query page.</td>
+              </tr>
+              <tr>
+                <td>Activation record</td>
+                <td>
+                  Licence code, a device hash derived from stable hardware identifiers,
+                  a device signature secret, the device information reported by the app
+                  (operating system and version, app version, machine model, CPU, memory size,
+                  architecture, hardware UUID), a session token, and activation / last-validation
+                  timestamps.
+                </td>
+                <td>
+                  To enforce the three-device limit, let you revoke a device, and keep the licence
+                  valid.
+                </td>
+              </tr>
+              <tr>
+                <td>API access logs</td>
+                <td>
+                  Endpoint called, timestamp, request parameters, HTTP status code and duration.
+                  Security-sensitive values such as tokens, signatures and keys are redacted
+                  before being written. Licence codes, e-mail addresses and device hashes are
+                  stored in clear text so that support and abuse investigations remain possible.
+                </td>
+                <td>To operate, troubleshoot and protect the licensing service.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            We do <strong>not</strong> collect your name, postal address, phone number, government
+            identifiers, precise location, contacts, photos or any special-category data. We do not
+            sell any data.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">4.</span>Payments</h2>
+          <ul>
+            <li>
+              <strong>USD purchases are processed by Paddle</strong>, which acts as the Merchant of
+              Record. Paddle collects and processes your payment details and billing information as
+              an independent controller, and issues your receipt. Please see Paddle's own privacy
+              policy for how it handles that data.
+            </li>
+            <li>
+              <strong>CNY purchases are processed by Alipay.</strong> Your payment is handled
+              inside Alipay's own environment, governed by Alipay's privacy policy.
+            </li>
+            <li>
+              We never see or store your full card number, CVV or banking credentials. We receive
+              only the resulting order reference, a masked or abbreviated e-mail address where
+              applicable, the amount and the payment status.
+            </li>
+            <li>
+              When you open a checkout, the payment provider's own scripts are loaded from its
+              servers and may set cookies or collect device signals for fraud prevention, under
+              its own policies.
+            </li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">5.</span>Cookies and local storage on the website</h2>
+          <ul>
+            <li>
+              Our website does <strong>not</strong> use advertising cookies and does
+              <strong>not</strong> run third-party analytics or tracking scripts.
+            </li>
+            <li>
+              We store your language preference in your browser's <code>localStorage</code>, and a
+              short-lived navigation value in <code>sessionStorage</code> so that opening a page
+              directly from a link works correctly. Both stay in your browser and can be cleared at
+              any time through your browser settings.
+            </li>
+            <li>
+              Third parties whose services you reach from our site (Paddle, Alipay, GitHub) may set
+              their own cookies under their own policies.
+            </li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">6.</span>E-mail we send you</h2>
+          <p>
+            We send transactional e-mail only: your licence code after a successful purchase, the
+            result of a licence query you requested, and replies to support requests. We may use a
+            third-party transactional e-mail delivery service to send these messages, which
+            receives your e-mail address and the message content for that purpose. We do not send
+            newsletters or marketing e-mail.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">7.</span>Service providers and disclosures</h2>
+          <p>We share personal data only with:</p>
+          <ul>
+            <li>
+              <strong>Hosting and infrastructure providers</strong> that run our servers, database
+              and static website;
+            </li>
+            <li>
+              <strong>Payment providers</strong> (Paddle for USD, Alipay for CNY) to process your
+              purchase and handle refunds;
+            </li>
+            <li>
+              <strong>Transactional e-mail delivery services</strong> used to send your licence
+              code;
+            </li>
+            <li>
+              <strong>Authorities</strong>, where we are legally required to disclose data, or where
+              disclosure is necessary to investigate fraud or protect our rights.
+            </li>
+          </ul>
+          <p>
+            These providers act under contract and are permitted to use the data only to provide
+            their service to us. We do not sell, rent or trade personal data, and we do not use it
+            for advertising.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">8.</span>International transfers</h2>
+          <p>
+            Our infrastructure and the service providers listed above may be located outside your
+            country. Where required, transfers are covered by appropriate safeguards such as
+            standard contractual clauses. By purchasing a licence you understand that your order and
+            licence data may be processed in another jurisdiction.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">9.</span>How long we keep data</h2>
+          <ul>
+            <li>
+              <strong>Order, licence and activation records</strong> are kept while your licence is
+              active and for as long as we are required to keep accounting and tax records
+              afterwards. You can ask us to delete them once your licence is no longer needed — see
+              section 11 — but we may have to retain limited records for legal reasons.
+            </li>
+            <li>
+              <strong>API access logs</strong> are kept for a limited period for troubleshooting and
+              abuse prevention, and are then deleted.
+            </li>
+            <li>
+              <strong>Data on your device</strong> is under your control; deleting the application's
+              data or using the in-app "clear all data" option removes it.
+            </li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">10.</span>Security</h2>
+          <p>
+            We protect data in transit with TLS, restrict server-side access to what is needed to
+            operate the service, redact tokens, signatures and keys before writing logs, and store
+            account passwords and OTP secrets only in encrypted form on your own device. No system
+            is perfectly secure, but we design the service so that the most sensitive data — your
+            clipboard, your e-mail and your 2FA secrets — never reaches us in the first place.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">11.</span>Your rights</h2>
+          <p>
+            Depending on where you live, you may have the right to access, correct, delete, restrict
+            or object to the processing of your personal data, to receive it in a portable format, or
+            to withdraw consent. To exercise any of these rights, e-mail
+            <a href="mailto:dubiao@gmail.com">dubiao@gmail.com</a> from the address you used to
+            purchase. We will respond within the period required by applicable law (normally 30
+            days) and may ask you to verify that the e-mail address belongs to you.
+          </p>
+          <p>
+            Our legal bases for processing are the performance of our contract with you (issuing and
+            validating your licence, providing support), our legitimate interests (preventing fraud
+            and abuse, securing the service) and compliance with legal obligations (tax and
+            accounting records).
+          </p>
+          <p>
+            If you are in the EEA, the UK or Switzerland, you also have the right to lodge a
+            complaint with your local supervisory authority. We do not sell personal information, and
+            we do not knowingly process the data of children under 13 (or under 16 where that is the
+            applicable age of consent).
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">12.</span>Changes to this policy</h2>
+          <p>
+            We may update this policy to reflect changes to the service or to the law. The "Last
+            updated" date at the top will change accordingly, and material changes will be announced
+            on our website. Continuing to use the Software after an update means you accept the
+            revised policy.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">13.</span>Contact</h2>
+          <p>
+            Coco Toast · E-mail:
+            <a href="mailto:dubiao@gmail.com">dubiao@gmail.com</a>
+          </p>
+        </section>
+      </article>
+
+      <!-- ==================== 中文 ==================== -->
+      <article data-lang-block="zh" lang="zh-CN">
+        <h1 class="legal-title">隐私政策</h1>
+        <p class="legal-meta">
+          <span>生效日期：2026 年 9 月 22 日</span>
+          <span>最后更新：2026 年 9 月 22 日</span>
+        </p>
+
+        <p class="legal-lead">
+          Coco Toast 遵循一个简单原则：<strong>你的剪贴板、邮箱与一次性密码始终留在你自己的设备上</strong>。
+          我们的服务器只处理「卖出一份 Pro 授权并让它持续可用」所必需的信息。本政策逐项说明这件事。
+        </p>
+
+        <section class="legal-section">
+          <h2><span class="num">1.</span>我们是谁</h2>
+          <p>
+            Coco Toast（下称「我们」）开发并发行 Coco Toast 桌面应用，并运营其网站与授权服务器。
+            任何隐私相关的问题或请求，均可通过
+            <a href="mailto:dubiao@gmail.com">dubiao@gmail.com</a> 联系我们。
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">2.</span>仅保存在你本机的数据</h2>
+          <p>以下数据仅在你本机生成和保存，<strong>绝不会传输给我们</strong>：</p>
+          <ul>
+            <li>
+              <strong>剪贴板内容。</strong>你复制的内容由桌面应用在你本机分析处理，
+              不上传、我们也不记录，更不会用于建立任何画像。
+            </li>
+            <li>
+              <strong>邮箱账户凭据。</strong>若你接入邮箱，IMAP 密码会在本机加密，
+              并由操作系统钥匙串保护。邮件由你的邮箱服务商直接拉取到你的设备，
+              我们不作为中间人，也绝不会收到你的密码或邮件内容。
+            </li>
+            <li>
+              <strong>OTP / TOTP 密钥。</strong>一次性密码密钥以同样的方式加密后仅存于本机，
+              不会上传。
+            </li>
+            <li>
+              <strong>应用设置</strong>（偏好项、窗口状态、语言）保存在本机配置文件中，
+              以及本机的 Pro 授权状态文件。
+            </li>
+          </ul>
+          <p class="legal-note">
+            <strong>简而言之：</strong>我们无法读取你的剪贴板、邮件或两步验证码。
+            卸载应用并清除其数据后，这些信息即被删除。
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">3.</span>购买或激活授权时我们收集的数据</h2>
+          <p>为完成授权销售并让它在你的多台设备上持续可用，我们的服务器会保存以下信息：</p>
+          <table class="legal-table">
+            <thead>
+              <tr>
+                <th>类别</th>
+                <th>包含内容</th>
+                <th>用途</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>订单记录</td>
+                <td>
+                  订单号、邮箱地址、金额、币种、支付渠道（支付宝或 Paddle）、
+                  支付状态、下单与支付时间。
+                </td>
+                <td>确认你的付款并签发授权。</td>
+              </tr>
+              <tr>
+                <td>授权记录</td>
+                <td>
+                  激活码、邮箱地址、可激活设备数上限、已使用次数、授权状态，
+                  以及授权邮件是否已发送。
+                </td>
+                <td>投递激活码，并支撑查询页功能。</td>
+              </tr>
+              <tr>
+                <td>激活记录</td>
+                <td>
+                  激活码、由稳定硬件标识派生的设备哈希、设备签名用密钥、
+                  应用上报的设备信息（操作系统及版本、应用版本、机型、CPU、内存大小、
+                  架构、硬件 UUID）、会话令牌，以及激活时间与最近校验时间。
+                </td>
+                <td>执行三台设备上限、支持你撤销设备、维持授权有效。</td>
+              </tr>
+              <tr>
+                <td>接口调用日志</td>
+                <td>
+                  调用的接口、调用时间、请求参数、HTTP 状态码与耗时。
+                  令牌、签名、密钥等敏感值会在写入前脱敏。
+                  激活码、邮箱地址与设备哈希为明文保存，以便必要时进行客服支持与滥用调查。
+                </td>
+                <td>运维、排障与保护授权服务。</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            我们<strong>不会</strong>收集你的姓名、通讯地址、电话号码、身份证件号码、精确定位、
+            通讯录、照片或任何特殊类别个人信息，也不会出售任何数据。
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">4.</span>支付</h2>
+          <ul>
+            <li>
+              <strong>美元订单由 Paddle 处理</strong>，Paddle 在这些交易中作为记录商户
+              （Merchant of Record），以其独立控制者身份收集与处理你的付款信息和账单信息，
+              并出具收据。其数据处理方式请见 Paddle 的隐私政策。
+            </li>
+            <li>
+              <strong>人民币订单由支付宝处理。</strong>支付在支付宝自有环境内完成，
+              适用支付宝的隐私政策。
+            </li>
+            <li>
+              我们不会看到、也不会存储你的完整卡号、CVV 或银行凭据，
+              只会收到订单号、适用的脱敏或缩写邮箱、金额与支付状态。
+            </li>
+            <li>
+              打开收银台时，支付渠道自身的脚本会从其服务器加载，
+              可能为风控目的设置 Cookie 或采集设备信息，适用其各自的政策。
+            </li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">5.</span>网站上的 Cookie 与本地存储</h2>
+          <ul>
+            <li>
+              我们的网站<strong>不使用</strong>广告 Cookie，也<strong>不加载</strong>第三方统计
+              或追踪脚本。
+            </li>
+            <li>
+              我们会在浏览器 <code>localStorage</code> 中保存你的语言偏好，
+              并在 <code>sessionStorage</code> 中保存一个用于页面直达跳转的临时值
+              （使从链接直接打开某个页面能正常工作）。两者都只保存在你的浏览器里，
+              可随时通过浏览器设置清除。
+            </li>
+            <li>
+              你从我站跳转使用的第三方服务（Paddle、支付宝、GitHub）可能按其自身政策设置 Cookie。
+            </li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">6.</span>我们发给你的邮件</h2>
+          <p>
+            我们只发送事务性邮件：购买成功后的激活码、你主动发起的激活码查询结果，
+            以及对技术支持请求的回复。我们可能使用第三方事务性邮件投递服务发送这些邮件，
+            该服务为此目的会接收你的邮箱地址与邮件内容。我们不发送订阅邮件，也不发送营销邮件。
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">7.</span>服务商与信息披露</h2>
+          <p>我们仅在下列情形下共享个人信息：</p>
+          <ul>
+            <li><strong>托管与基础设施服务商</strong>，用于运行我们的服务器、数据库与静态网站；</li>
+            <li>
+              <strong>支付渠道</strong>（美元为 Paddle、人民币为支付宝），
+              用于完成付款与处理退款；
+            </li>
+            <li><strong>事务性邮件投递服务</strong>，用于发送激活码；</li>
+            <li>
+              <strong>依法要求的情形</strong>：法律要求我们披露数据，
+              或为调查欺诈、保护我们的权利所必需时。
+            </li>
+          </ul>
+          <p>
+            上述服务商依合同约定行事，仅可为向我们提供服务之目的使用数据。
+            我们不出售、出租或交易个人信息，也不会将其用于广告投放。
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">8.</span>跨境传输</h2>
+          <p>
+            我们的基础设施及上述服务商可能位于你所在国家/地区之外。
+            在适用法律要求时，相关传输会以标准合同条款等适当保障措施为前提。
+            购买授权即表示你理解你的订单与授权数据可能在其他司法辖区被处理。
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">9.</span>数据保留期限</h2>
+          <ul>
+            <li>
+              <strong>订单、授权与激活记录</strong>在授权有效期内保留；
+              授权不再需要后，如法律要求（会计与税务留存）我们仍会保留一段时间的有限记录，
+              其余部分可应你要求删除（见第 11 条）。
+            </li>
+            <li>
+              <strong>接口调用日志</strong>仅为排障与防滥用保留有限期限，到期后删除。
+            </li>
+            <li>
+              <strong>你本机的数据</strong>完全由你掌控：删除应用数据，
+              或使用应用内的「清除全部数据」功能即可清除。
+            </li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">10.</span>安全措施</h2>
+          <p>
+            我们使用 TLS 保护传输中的数据，将服务器侧访问权限限制在运维所必需的范围内，
+            在写入日志前对令牌、签名与密钥脱敏，账户密码与 OTP 密钥仅以加密形式存放在你自己的设备上。
+            没有绝对安全的系统，但我们的设计目标是：最敏感的数据——
+            你的剪贴板、邮件与两步验证密钥——从一开始就不会到达我们这里。
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">11.</span>你的权利</h2>
+          <p>
+            依据你所在地区的法律，你可能有权访问、更正、删除、限制或反对我们处理你的个人信息，
+            有权以可携带格式获取这些数据，或撤回同意。请使用购买时所用的邮箱，
+            致信 <a href="mailto:dubiao@gmail.com">dubiao@gmail.com</a> 行使上述权利。
+            我们会在适用法律要求的期限内（通常为 30 天）回复，
+            并可能要求你验证该邮箱确实属于你。
+          </p>
+          <p>
+            我们处理个人信息的合法性基础为：履行与你之间的合同（签发并校验授权、提供支持）、
+            我们的合法利益（防范欺诈与滥用、保障服务安全），以及遵守法律义务（税务与会计留存）。
+          </p>
+          <p>
+            若你位于欧洲经济区、英国或瑞士，你还有权向当地监管机构投诉。
+            我们不出售个人信息，也不会有意处理未满 13 周岁（或在当地法定同意年龄为 16 周岁的地区
+            未满 16 周岁）儿童的数据。
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">12.</span>政策更新</h2>
+          <p>
+            我们可能因服务或法律变化而更新本政策，更新后上方的「最后更新」日期会同步变化，
+            重大变更会在网站公告。更新后你继续使用本软件，即视为接受修订后的政策。
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2><span class="num">13.</span>联系方式</h2>
+          <p>Coco Toast · 邮箱：<a href="mailto:dubiao@gmail.com">dubiao@gmail.com</a></p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="legal-footer">
+      <div class="legal-footer__inner">
+        <span>© 2025 Coco Toast · All rights reserved.</span>
+        <div class="legal-footer__links">
+          <a href="/legal/terms.html">Terms of Service</a>
+          <a href="/legal/privacy.html" aria-current="page">Privacy Policy</a>
+          <a href="/legal/refund.html">Refund Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/legal/legal.js"></script>
+  </body>
+</html>
