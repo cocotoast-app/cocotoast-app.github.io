@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# 支付回跳结果页，无索引价值
+Disallow: /pay/result
+
+# 后台管理页（由 server-admin 构建后合并进同一站点）
+Disallow: /admin.html
+
+Sitemap: https://toast.coconot.cc/sitemap.xml
